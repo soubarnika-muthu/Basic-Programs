@@ -9,8 +9,9 @@ namespace BasicCorePrograms
     // 5.Prime Factors program
     // 6.Quotient And Reaminder Program
     // 7.Swapping of Two Numbers
-    //8.Even or Odd
-    //9.Vowel or Consonant
+    // 8.Even or Odd
+    // 9.Vowel or Consonant
+    // 10.Largest Number
     class Program
     {
         static void Main(string[] args)
@@ -18,7 +19,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Implementation of basic programs");
             Console.WriteLine("Enter choice to select programs: ");
             Console.WriteLine("1.Flip Coin 2.Leap Year 3. Power Of Two 4.Harmonic Number 5.Prime Factors 6.Quotient And Reaminder ");
-            Console.WriteLine("7.Swapping of two numbers 8.Even or Odd 9.Vowel or Consonant");
+            Console.WriteLine("7.Swapping of two numbers 8.Even or Odd 9.Vowel or Consonant 10.Finding Largest Number");
             int choice = Convert.ToInt32(Console.ReadLine());
             //Selection statement
             switch (choice)
@@ -66,6 +67,11 @@ namespace BasicCorePrograms
                     Console.WriteLine("Finding Vowel or Consonant");
                     VowelorConsonant.ReadInput();
                     break;
+                case 10:
+                    Console.WriteLine("Finding Largest Number ");
+                    LargestNumber.ReadInput();
+                    break;
+
                 default:
                     Console.WriteLine("Enter Valid Choice!!!");
                     break;
