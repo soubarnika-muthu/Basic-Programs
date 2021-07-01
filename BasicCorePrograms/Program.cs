@@ -8,6 +8,7 @@ namespace BasicCorePrograms
     // 4.Harmonic Number Program
     // 5.Prime Factors program
     // 6.Quotient And Reaminder Program
+    // 7.Swap of Two Numbers Pogram
     class Program
     {
         static void Main(string[] args)
@@ -15,6 +16,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Implementation of basic programs");
             Console.WriteLine("Enter choice to select programs: ");
             Console.WriteLine("1.Flip Coin 2.Leap Year 3. Power Of Two 4.Harmonic Number 5.Prime Factors 6.Quotient And Reaminder ");
+            Console.WriteLine("7.Swap of Two Numbers");
             int choice = Convert.ToInt32(Console.ReadLine());
             //Selection statement
             switch (choice)
@@ -49,6 +51,11 @@ namespace BasicCorePrograms
                     Console.WriteLine("Finding Quotient And Reaminder!");
                     QuotientAndRemainder.ReadInput();
                     break;
+                case 7:
+
+                    Console.WriteLine("Swapping of Two Numbers!");
+                    SwapOfTwo.ReadInput();
+                    break;
                 default:
                     Console.WriteLine("Enter Valid Choice!!!");
                     break;
@@ -57,3 +64,4 @@ namespace BasicCorePrograms
         }
     }
 }
+
