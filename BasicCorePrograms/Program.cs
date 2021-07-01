@@ -9,7 +9,8 @@ namespace BasicCorePrograms
     // 5.Prime Factors program
     // 6.Quotient And Reaminder Program
     // 7.Swapping of Two Numbers
-    // 8.Even Or Odd Program
+    //8.Even or Odd
+    //9.Vowel or Consonant
     class Program
     {
         static void Main(string[] args)
@@ -17,7 +18,7 @@ namespace BasicCorePrograms
             Console.WriteLine("Implementation of basic programs");
             Console.WriteLine("Enter choice to select programs: ");
             Console.WriteLine("1.Flip Coin 2.Leap Year 3. Power Of Two 4.Harmonic Number 5.Prime Factors 6.Quotient And Reaminder ");
-            Console.WriteLine("7.Swapping of two numbers 8.Even or Odd");
+            Console.WriteLine("7.Swapping of two numbers 8.Even or Odd 9.Vowel or Consonant");
             int choice = Convert.ToInt32(Console.ReadLine());
             //Selection statement
             switch (choice)
@@ -28,17 +29,17 @@ namespace BasicCorePrograms
                     FlipCoin.ReadInput();
                     break;
                 case 2:
-                    //Computing Leap Year Program
+                    ////Computing Leap Year Program
                     Console.WriteLine("Finding Leap Year Or Not!");
                     LeapYear.ReadInput();
                     break;
                 case 3:
-                    //Computing Power Of Two Program
+                    ////Computing Power Of Two Program
                     Console.WriteLine("Finding Power Of Two");
                     PowerOfTwo.ReadInput();
                     break;
                 case 4:
-                    //Computing Harmonic Number Program
+                    ////Computing Harmonic Number Program
                     Console.WriteLine("Finding Nth Harmonic Number!");
                     HarmonicNumber.ReadInput();
                     break;
@@ -60,6 +61,10 @@ namespace BasicCorePrograms
                 case 8:
                     Console.WriteLine("Finding Even Or Odd!");
                     EvenorOdd.ReadInput();
+                    break;
+                case 9:
+                    Console.WriteLine("Finding Vowel or Consonant");
+                    VowelorConsonant.ReadInput();
                     break;
                 default:
                     Console.WriteLine("Enter Valid Choice!!!");
